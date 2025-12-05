@@ -1,0 +1,250 @@
+CS110 - Introduction to Computing - Grading Breakdown
+Fall 2025 Semester
+
+================================================================
+OVERALL GRADE COMPOSITION
+================================================================
+
+Total Points: 1000 points
+
+Major Categories:
+1. Graded Reviews (GRs): 400 points (40%)
+2. Programming Packs: 250 points (25%)
+3. Labs: 150 points (15%)
+4. Course Project: 150 points (15%)
+5. Participation & Quizzes: 50 points (5%)
+
+================================================================
+GRADED REVIEWS (400 points total - 40%)
+================================================================
+
+There are TWO graded reviews during the fall semester:
+
+Graded Review 1 (GR1): 200 points
+- Date (M-section): October 1, 2025
+- Date (T-section): October 2, 2025
+- Covers: Lessons 1-19
+- Topics: Variables, functions, decisions, loops, lists, file I/O
+- Format: In-class, closed-book exam
+- Duration: 50 minutes
+- Question types: Code writing, code reading, multiple choice, short answer
+
+Graded Review 2 (GR2): 200 points
+- Date (M-section): December 10, 2025
+- Date (T-section): December 11, 2025
+- Covers: Lessons 20-40 (with emphasis on new material)
+- Topics: Advanced data structures, algorithms, networking, AI, cybersecurity
+- Format: In-class, closed-book exam
+- Duration: 50 minutes
+- Question types: Code writing, code reading, multiple choice, short answer
+
+Grading Scale for each GR:
+- 180-200 points: A (90-100%)
+- 160-179 points: B (80-89%)
+- 140-159 points: C (70-79%)
+- 120-139 points: D (60-69%)
+- Below 120 points: F (below 60%)
+
+================================================================
+PROGRAMMING PACKS (250 points total - 25%)
+================================================================
+
+There are 10 programming packs throughout the semester.
+Each programming pack is worth 25 points.
+
+Programming Pack Schedule:
+- Pack 1: Due Lesson 6 - Basic I/O and expressions (25 points)
+- Pack 2: Due Lesson 8 - Functions and decomposition (25 points)
+- Pack 3: Due Lesson 10 - Conditional logic (25 points)
+- Pack 4: Due Lesson 12 - While and for loops (25 points)
+- Pack 5: Due Lesson 14 - Lists and data processing (25 points)
+- Pack 6: Due Lesson 16 - File I/O operations (25 points)
+- Pack 7: Due Lesson 21 - Dictionaries and sets (25 points)
+- Pack 8: Due Lesson 23 - Algorithm implementation (25 points)
+- Pack 9: Due Lesson 26 - Networking concepts (25 points)
+- Pack 10: Due Lesson 32 - Cybersecurity fundamentals (25 points)
+
+Grading Rubric per Pack:
+- Correctness: 15 points (code produces correct output)
+- Style & Documentation: 5 points (proper comments, naming conventions)
+- Efficiency: 3 points (reasonable algorithm choice)
+- On-time Submission: 2 points (submitted by due date/time)
+
+Late Policy for Programming Packs:
+- Up to 24 hours late: -20% penalty
+- 24-48 hours late: -40% penalty
+- More than 48 hours late: 0 points (not accepted)
+
+================================================================
+LABS (150 points total - 15%)
+================================================================
+
+There are 15 lab sessions throughout the semester.
+Each lab is worth 10 points.
+
+Lab Schedule (one per week):
+- Labs 1-5: Weeks 1-5 (50 points) - Python basics and setup
+- Labs 6-10: Weeks 6-10 (50 points) - Functions, decisions, loops
+- Labs 11-15: Weeks 11-15 (50 points) - Data structures, algorithms, projects
+
+Lab Grading:
+- Attendance & Participation: 4 points (must attend and engage)
+- Lab Completion: 6 points (complete assigned exercises)
+
+Labs are graded as complete/incomplete during the lab session.
+No makeups for missed labs except for official excused absences.
+
+================================================================
+COURSE PROJECT (150 points total - 15%)
+================================================================
+
+The course project is completed in phases throughout the semester.
+
+Project Milestones:
+1. Project Proposal: 20 points (Due Lesson 18)
+   - Problem statement
+   - Proposed solution approach
+   - Timeline
+
+2. Progress Check 1: 25 points (Due Lesson 25)
+   - Working prototype
+   - Code structure established
+   - Preliminary testing
+
+3. Progress Check 2: 25 points (Due Lesson 33)
+   - Core functionality complete
+   - Documentation started
+   - User testing feedback
+
+4. Final Project Submission: 60 points (Due Lesson 38)
+   - Complete working program (35 points)
+   - Documentation and README (10 points)
+   - Code quality and style (10 points)
+   - Creativity and complexity (5 points)
+
+5. Project Presentation: 20 points (Lesson 38 or 39)
+   - 5-minute presentation
+   - Demonstrate key features
+   - Explain technical challenges
+   - Answer questions
+
+Project Requirements:
+- Must use Python as primary language
+- Must demonstrate concepts from at least 3 different course modules
+- Must include functions, data structures, and file I/O
+- Must be original work (no copying from online sources)
+
+================================================================
+PARTICIPATION & QUIZZES (50 points total - 5%)
+================================================================
+
+In-Class Participation: 25 points
+- Active participation in discussions
+- Asking/answering questions
+- Helping classmates during group work
+- Demonstrating engagement with course material
+
+Scored by instructor observation throughout semester:
+- Excellent participation (23-25 points): Consistently engaged
+- Good participation (20-22 points): Usually engaged
+- Satisfactory participation (17-19 points): Sometimes engaged
+- Minimal participation (14-16 points): Rarely engaged
+- No participation (0-13 points): Not engaged
+
+Canvas Quizzes: 25 points (5 quizzes × 5 points each)
+- Quiz 1: Due Lesson 7 (5 points) - Variables and expressions
+- Quiz 2: Due Lesson 13 (5 points) - Functions and decisions
+- Quiz 3: Due Lesson 19 (5 points) - Loops and lists
+- Quiz 4: Due Lesson 27 (5 points) - Networking and web
+- Quiz 5: Due Lesson 35 (5 points) - AI and cybersecurity
+
+Quiz Format:
+- Multiple choice and short answer
+- Open book, open notes
+- 20-minute time limit
+- Available 48 hours before due date
+- One attempt only
+
+================================================================
+FINAL GRADE CALCULATION
+================================================================
+
+Letter Grade Scale:
+- A: 900-1000 points (90-100%)
+- B: 800-899 points (80-89%)
+- C: 700-799 points (70-79%)
+- D: 600-699 points (60-69%)
+- F: Below 600 points (below 60%)
+
+Plus/Minus Grading:
+- A: 930-1000 points
+- A-: 900-929 points
+- B+: 870-899 points
+- B: 830-869 points
+- B-: 800-829 points
+- C+: 770-799 points
+- C: 730-769 points
+- C-: 700-729 points
+- D+: 670-699 points
+- D: 630-669 points
+- D-: 600-629 points
+- F: Below 600 points
+
+================================================================
+EXTRA CREDIT OPPORTUNITIES
+================================================================
+
+Throughout the semester, students may earn up to 50 bonus points:
+
+1. Advanced Challenge Problems (up to 30 points)
+   - Optional advanced programming challenges
+   - Released after major topics
+   - Each worth 10 points
+
+2. Course Feedback Surveys (10 points)
+   - Mid-semester feedback: 5 points
+   - End-of-semester feedback: 5 points
+
+3. Help Session Attendance (up to 10 points)
+   - Attend 5+ instructor help sessions: 10 points
+   - Attend 3-4 help sessions: 6 points
+   - Attend 1-2 help sessions: 3 points
+
+Extra credit points are added to final grade after calculating the 1000-point total.
+Maximum final grade with extra credit: 1050 points (105%)
+
+================================================================
+IMPORTANT GRADING POLICIES
+================================================================
+
+Academic Honesty:
+- All work must be your own
+- Collaboration allowed on labs only
+- Programming packs and projects must be individual work
+- Violations result in zero points and potential course failure
+
+Regrading Requests:
+- Must be submitted within 7 days of grade posting
+- Must include written justification
+- Instructor decision is final
+
+Attendance:
+- Not directly graded except for labs
+- Missing 4+ classes without excuse may lower participation grade
+- Missing a GR requires official excuse for makeup
+
+Extensions:
+- Programming pack extensions: rare, require documentation
+- Project milestone extensions: possible with instructor approval
+- No extensions on GRs or quizzes
+
+Canvas Grade Updates:
+- Labs: graded within 2 days
+- Programming packs: graded within 7 days
+- Quizzes: auto-graded immediately
+- Project milestones: graded within 10 days
+- GRs: graded within 10 days
+
+================================================================
+END OF GRADING BREAKDOWN
+================================================================

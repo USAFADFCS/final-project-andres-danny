@@ -1,0 +1,385 @@
+{
+  "total": 22,
+  "passed": 16,
+  "failed": 2,
+  "partial": 4,
+  "by_category": {
+    "lesson_content": {
+      "total": 6,
+      "passed": 5,
+      "failed": 0,
+      "partial": 1
+    },
+    "schedule": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0,
+      "partial": 0
+    },
+    "assignments": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "partial": 0
+    },
+    "grading": {
+      "total": 4,
+      "passed": 2,
+      "failed": 2,
+      "partial": 0
+    },
+    "topic_search": {
+      "total": 3,
+      "passed": 1,
+      "failed": 0,
+      "partial": 2
+    },
+    "concepts": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "partial": 0
+    },
+    "complex": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "partial": 0
+    },
+    "edge_case": {
+      "total": 2,
+      "passed": 1,
+      "failed": 0,
+      "partial": 1
+    }
+  },
+  "total_time": 74.18801236152649,
+  "avg_time": 3.3721823800693858,
+  "details": [
+    {
+      "test_num": 1,
+      "question": "What is lesson 1 about?",
+      "category": "lesson_content",
+      "response": "Lesson 1 is about the course introduction, syllabus, and tools setup. It covers course goals, grading policies, expectations, problem-solving with computation, and the development environment with Python, VSCode/IDLE.",
+      "score": 1.0,
+      "status": "PASS",
+      "elapsed_time": 5.10308313369751,
+      "keywords_checked": [
+        "introduction",
+        "syllabus",
+        "tools"
+      ],
+      "missing_keywords": []
+    },
+    {
+      "test_num": 2,
+      "question": "What is lesson 7 about?",
+      "category": "lesson_content",
+      "response": "Lesson 7 focuses on \"Functions I,\" which introduces functions as reusable chunks of code. It covers defining functions with parameters, return values, and meaningful names, as well as practicing calling functions and passing arguments for clearer program structure.",
+      "score": 1.0,
+      "status": "PASS",
+      "elapsed_time": 2.7634129524230957,
+      "keywords_checked": [
+        "functions",
+        "defining",
+        "calling"
+      ],
+      "missing_keywords": []
+    },
+    {
+      "test_num": 3,
+      "question": "What is lesson 13 about?",
+      "category": "lesson_content",
+      "response": "Lesson 13 covers \"Lists I,\" introducing Python lists as ordered collections of items. Students will learn to create, index, and update list elements, as well as using functions like len(), max(), min(), and sum(), and looping over lists to process multiple values.",
+      "score": 0.5,
+      "status": "PARTIAL",
+      "elapsed_time": 3.014065980911255,
+      "keywords_checked": [
+        "lists",
+        "one-dimensional"
+      ],
+      "missing_keywords": [
+        "one-dimensional"
+      ]
+    },
+    {
+      "test_num": 4,
+      "question": "What is lesson 20 about?",
+      "category": "lesson_content",
+      "response": "Lesson 20 is a Graded Review (GR1) that takes place in-class, covering early course content from lessons 1 to 19. It emphasizes problem-solving, reading and writing small Python programs, and demonstrating an understanding of foundational concepts.",
+      "score": 1.0,
+      "status": "PASS",
+      "elapsed_time": 3.471843957901001,
+      "keywords_checked": [
+        "graded review",
+        "gr1"
+      ],
+      "missing_keywords": []
+    },
+    {
+      "test_num": 5,
+      "question": "What topics are covered in lesson 27?",
+      "category": "lesson_content",
+      "response": "Lesson 27 covers \"Artificial Intelligence I,\" focusing on the history and evolution of artificial intelligence. It includes discussions on categories of AI, the Turing test, the distinction between weak and strong AI, and representative applications.",
+      "score": 1.0,
+      "status": "PASS",
+      "elapsed_time": 3.3450868129730225,
+      "keywords_checked": [
+        "artificial intelligence",
+        "history"
+      ],
+      "missing_keywords": []
+    },
+    {
+      "test_num": 6,
+      "question": "What is lesson 32 about?",
+      "category": "lesson_content",
+      "response": "Lesson 32 focuses on \"Cybersecurity I,\" covering the fundamentals of information security. It defines key concepts such as risk, threats, and vulnerabilities, and explains the CIA triad (confidentiality, integrity, availability) along with how checksums, hashes, and encryption contribute to secure communication.",
+      "score": 1.0,
+      "status": "PASS",
+      "elapsed_time": 2.9532978534698486,
+      "keywords_checked": [
+        "cybersecurity",
+        "security"
+      ],
+      "missing_keywords": []
+    },
+    {
+      "test_num": 7,
+      "question": "When is lesson 1?",
+      "category": "schedule",
+      "response": "Lesson 1 is scheduled for August 6, 2025, for the M-section and August 7, 2025, for the T-section. It will cover the course introduction, syllabus, and tools setup.",
+      "score": 1.0,
+      "status": "PASS",
+      "elapsed_time": 2.982598066329956,
+      "keywords_checked": [
+        "august 6",
+        "august 7"
+      ],
+      "missing_keywords": []
+    },
+    {
+      "test_num": 8,
+      "question": "When is Graded Review 1?",
+      "category": "schedule",
+      "response": "Graded Review 1 (GR1) is scheduled for October 1, 2025, for the M-section and October 2, 2025, for the T-section. It will cover content from lessons 1 to 19 and will be an in-class, closed-book exam.",
+      "score": 1.0,
+      "status": "PASS",
+      "elapsed_time": 2.4630630016326904,
+      "keywords_checked": [
+        "october 1",
+        "october 2"
+      ],
+      "missing_keywords": []
+    },
+    {
+      "test_num": 9,
+      "question": "When is lesson 40?",
+      "category": "schedule",
+      "response": "Lesson 40 is scheduled for December 4, 2025, for the M-section and December 5, 2025, for the T-section. It will focus on course wrap-up and reflection, discussing key takeaways and the application of computing concepts to cadet life and future Air Force roles.",
+      "score": 1.0,
+      "status": "PASS",
+      "elapsed_time": 3.023146152496338,
+      "keywords_checked": [
+        "december 4",
+        "december 5"
+      ],
+      "missing_keywords": []
+    },
+    {
+      "test_num": 10,
+      "question": "What assignments are due for lesson 17?",
+      "category": "assignments",
+      "response": "There are no specific assignments listed for Lesson 17 in the provided information. However, any assignments marked as due for Lesson 17 on the official CS110 assignment schedule will be due at the start of class on September 22, 2025, for the M-section and September 23, 2025, for the T-section.",
+      "score": 1.0,
+      "status": "PASS",
+      "elapsed_time": 2.969644069671631,
+      "keywords_checked": [
+        "september"
+      ],
+      "missing_keywords": []
+    },
+    {
+      "test_num": 11,
+      "question": "How much are graded reviews worth?",
+      "category": "grading",
+      "response": "Each graded review in the CS110 course is worth 200 points. There are two graded reviews scheduled during the semester.",
+      "score": 0.0,
+      "status": "FAIL",
+      "elapsed_time": 3.6453161239624023,
+      "keywords_checked": [
+        "400",
+        "40"
+      ],
+      "missing_keywords": [
+        "400",
+        "40"
+      ]
+    },
+    {
+      "test_num": 12,
+      "question": "How many programming packs are there?",
+      "category": "grading",
+      "response": "There are 10 programming packs throughout the CS110 semester, with each pack worth 25 points.",
+      "score": 1.0,
+      "status": "PASS",
+      "elapsed_time": 2.2486510276794434,
+      "keywords_checked": [
+        "10"
+      ],
+      "missing_keywords": []
+    },
+    {
+      "test_num": 13,
+      "question": "What is the late policy for programming packs?",
+      "category": "grading",
+      "response": "The late policy for programming packs in CS110 is as follows:\n- If submitted up to 24 hours late, there is a 20% penalty.\n- If submitted 24-48 hours late, there is a 40% penalty.\n- If submitted more than 48 hours late, the pack will not be accepted and receive 0 points.",
+      "score": 1.0,
+      "status": "PASS",
+      "elapsed_time": 4.090205907821655,
+      "keywords_checked": [
+        "24",
+        "penalty"
+      ],
+      "missing_keywords": []
+    },
+    {
+      "test_num": 14,
+      "question": "How much is the course project worth?",
+      "category": "grading",
+      "response": "The course project in CS110 has several components with a total worth of 110 points. This includes progress checks and a final project submission, as well as a project presentation.",
+      "score": 0.0,
+      "status": "FAIL",
+      "elapsed_time": 2.949906826019287,
+      "keywords_checked": [
+        "150",
+        "15"
+      ],
+      "missing_keywords": [
+        "150",
+        "15"
+      ]
+    },
+    {
+      "test_num": 15,
+      "question": "Which lessons cover Python basics?",
+      "category": "topic_search",
+      "response": "The lessons covering Python basics in the CS110 course include Lesson 1, which introduces foundational concepts, and Lesson 6, which focuses on using input and formatted output. These lessons emphasize problem-solving and writing small Python programs.",
+      "score": 0.5,
+      "status": "PARTIAL",
+      "elapsed_time": 2.491089105606079,
+      "keywords_checked": [
+        "lesson 5",
+        "lesson 6"
+      ],
+      "missing_keywords": [
+        "lesson 5"
+      ]
+    },
+    {
+      "test_num": 16,
+      "question": "Which lessons cover cybersecurity?",
+      "category": "topic_search",
+      "response": "The lessons covering cybersecurity in the CS110 course include:\n\n- Lesson 33: Cybersecurity II: Cyber Crime and the Attack Lifecycle \n- Lesson 35: Cybersecurity IV: Offensive Cyber Operations and Case Studies \n- Lesson 36: Cybersecurity V: Defense in Depth and Security Principles \n\nThese lessons address various aspects of cybersecurity, including cybercrime trends, offensive operations, and defensive strategies.",
+      "score": 0.5,
+      "status": "PARTIAL",
+      "elapsed_time": 3.9067299365997314,
+      "keywords_checked": [
+        "32",
+        "33"
+      ],
+      "missing_keywords": [
+        "32"
+      ]
+    },
+    {
+      "test_num": 17,
+      "question": "Which lessons cover artificial intelligence?",
+      "category": "topic_search",
+      "response": "The lessons covering artificial intelligence in the CS110 course include:\n\n- Lesson 27: Artificial Intelligence I: History and Foundations\n- Lesson 28: Artificial Intelligence II: Sense\u2013Think\u2013Act and Search\n- Lesson 31: Machine Learning II: Limitations and Ethics\n\nThese lessons explore the history of AI, fundamental concepts and techniques, as well as ethical considerations in AI applications.",
+      "score": 1.0,
+      "status": "PASS",
+      "elapsed_time": 4.1732001304626465,
+      "keywords_checked": [
+        "27",
+        "28"
+      ],
+      "missing_keywords": []
+    },
+    {
+      "test_num": 18,
+      "question": "What are Python lists?",
+      "category": "concepts",
+      "response": "In Python, lists are ordered collections of items that can store multiple values in a single variable. Lists can be one-dimensional or two-dimensional (a list of lists) and allow operations such as indexing, appending new items, and various built-in functions like `len()`, `max()`, `min()`, and `sum()`. They enable easy iteration over sequences and can store different types of data.",
+      "score": 1.0,
+      "status": "PASS",
+      "elapsed_time": 4.405480861663818,
+      "keywords_checked": [
+        "ordered",
+        "collection"
+      ],
+      "missing_keywords": []
+    },
+    {
+      "test_num": 19,
+      "question": "What is the Von Neumann architecture?",
+      "category": "concepts",
+      "response": "The Von Neumann architecture defines a computer's design, consisting of major hardware components such as the CPU, memory, storage, motherboard, and I/O devices. It explains how instructions and data flow through the system and highlights the importance of memory hierarchies. This topic is covered in Lesson 2 of the CS110 course.",
+      "score": 1.0,
+      "status": "PASS",
+      "elapsed_time": 4.134153842926025,
+      "keywords_checked": [
+        "cpu",
+        "memory"
+      ],
+      "missing_keywords": []
+    },
+    {
+      "test_num": 20,
+      "question": "Tell me about lesson 15 and when it occurs",
+      "category": "complex",
+      "response": "Lesson 15 in the CS110 course is titled \"PythonGraph I: Static Graphics.\" It will occur on September 16, 2025, for the M-section and on September 17, 2025, for the T-section. This lesson introduces the pythonGraph library for creating simple graphics, including drawing basic shapes, text, and images at specific coordinates, while reinforcing concepts of coordinate systems and data visualization.",
+      "score": 1.0,
+      "status": "PASS",
+      "elapsed_time": 4.2918078899383545,
+      "keywords_checked": [
+        "pythongraph",
+        "september"
+      ],
+      "missing_keywords": []
+    },
+    {
+      "test_num": 21,
+      "question": "What is lesson 100 about?",
+      "category": "edge_case",
+      "response": "There is no information available about Lesson 100 in the CS110 course. Please verify the lesson number or try asking about a different lesson.",
+      "score": 0.5,
+      "status": "PARTIAL",
+      "elapsed_time": 3.404026985168457,
+      "keywords_checked": [
+        "not",
+        "100"
+      ],
+      "missing_keywords": [
+        "not"
+      ]
+    },
+    {
+      "test_num": 22,
+      "question": "When is lesson 0?",
+      "category": "edge_case",
+      "response": "There is no information available regarding Lesson 0 in the CS110 course. It might be that there are no lessons numbered as 0, or it may not be documented in the course materials.",
+      "score": 1.0,
+      "status": "PASS",
+      "elapsed_time": 2.358201742172241,
+      "keywords_checked": [
+        "not",
+        "0"
+      ],
+      "missing_keywords": []
+    }
+  ],
+  "pass_rate": 72.72727272727273,
+  "partial_rate": 18.181818181818183,
+  "fail_rate": 9.090909090909092
+}

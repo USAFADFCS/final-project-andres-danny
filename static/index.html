@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CS110 Virtual Instructor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --bg: #020617;
+      --panel: #020617;
+      --accent: #2563eb;
+      --accent-soft: #111827;
+      --text-main: #f9fafb;
+      --text-muted: #9ca3af;
+      --border-subtle: #1f2933;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Segoe UI", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        radial-gradient(circle at top, #1e293b 0, #020617 50%, #000 100%);
+      color: var(--text-main);
+    }
+
+    /* Mean mode overrides */
+    body.mean-mode {
+      --border-subtle: #450a0a;
+      background:
+        radial-gradient(circle at top, #450a0a 0, #020617 50%, #000 100%);
+    }
+
+    .shell {
+      width: 100%;
+      max-width: 960px;
+      margin: 24px;
+      border-radius: 18px;
+      background: var(--panel);
+      box-shadow:
+        0 32px 60px rgba(0, 0, 0, 0.7),
+        0 0 0 1px rgba(148, 163, 184, 0.14);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+    }
+
+    /* HEADER */
+
+    .header {
+      padding: 16px 20px 10px 20px;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      background:
+        radial-gradient(circle at top left, #1d2a4d 0, #020617 60%);
+    }
+
+    body.mean-mode .header {
+      background:
+        radial-gradient(circle at top left, #450a0a 0, #020617 60%);
+    }
+
+    .title {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .title-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .title-badge {
+      font-size: 11px;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(59, 130, 246, 0.7);
+      color: var(--accent);
+      background: rgba(15, 23, 42, 0.85);
+    }
+
+    body.mean-mode .title-badge {
+      border-color: rgba(248, 113, 113, 0.8);
+      color: #fecaca;
+      background: rgba(15, 23, 42, 0.9);
+    }
+
+    .subtitle {
+      font-size: 12px;
+      color: var(--text-muted);
+      max-width: 420px;
+    }
+
+    .header-right {
+      text-align: right;
+      font-size: 11px;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      align-items: flex-end;
+    }
+
+    .badge-pill {
+      margin-top: 4px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: rgba(30, 64, 175, 0.4);
+      color: #e0f2fe;
+      font-size: 10px;
+    }
+
+    .badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: #22c55e;
+      box-shadow: 0 0 8px rgba(34, 197, 94, 0.9);
+    }
+
+    body.mean-mode .badge-pill {
+      background: rgba(127, 29, 29, 0.5);
+      color: #fee2e2;
+    }
+
+    body.mean-mode .badge-dot {
+      background: #ef4444;
+      box-shadow: 0 0 8px rgba(248, 113, 113, 0.9);
+    }
+
+    .mode-toggle {
+      margin-top: 4px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border-subtle);
+      background: #020617;
+      color: var(--text-muted);
+      font-size: 11px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: border 0.1s ease, background 0.1s ease, color 0.1s ease,
+        box-shadow 0.1s ease;
+    }
+
+    .mode-toggle span.label {
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-size: 10px;
+    }
+
+    .mode-toggle:hover {
+      border-color: rgba(59, 130, 246, 0.8);
+      box-shadow: 0 0 12px rgba(37, 99, 235, 0.4);
+      color: #e5e7eb;
+    }
+
+    body.mean-mode .mode-toggle {
+      border-color: rgba(248, 113, 113, 0.8);
+      background: rgba(15, 23, 42, 0.95);
+      color: #fecaca;
+      box-shadow: 0 0 12px rgba(248, 113, 113, 0.4);
+    }
+
+    /* MAIN AREA */
+
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background:
+        radial-gradient(circle at bottom right, #020617 0, #020617 60%);
+      padding: 12px 16px 8px 16px;
+    }
+
+    .chat-window {
+      flex: 1;
+      overflow-y: auto;
+      padding: 8px 4px 4px 4px;
+      scrollbar-width: thin;
+      scrollbar-color: #1f2933 #020617;
+    }
+
+    .chat-window::-webkit-scrollbar {
+      width: 6px;
+    }
+    .chat-window::-webkit-scrollbar-thumb {
+      background: #1f2933;
+      border-radius: 8px;
+    }
+
+    .message {
+      margin-bottom: 10px;
+      display: flex;
+    }
+
+    .message.user {
+      justify-content: flex-end;
+    }
+
+    .message.assistant {
+      justify-content: flex-start;
+    }
+
+    .bubble {
+      max-width: 80%;
+      padding: 9px 11px;
+      border-radius: 12px;
+      font-size: 13px;
+      line-height: 1.45;
+      white-space: pre-wrap;
+    }
+
+    .message.user .bubble {
+      background: #111827;
+      color: var(--text-main);
+      border: 1px solid rgba(148, 163, 184, 0.3);
+    }
+
+    .message.assistant .bubble {
+      background: #020617;
+      border: 1px solid rgba(37, 99, 235, 0.55);
+      color: var(--text-main);
+      box-shadow:
+        0 0 18px rgba(37, 99, 235, 0.35);
+    }
+
+    body.mean-mode .message.assistant .bubble {
+      border: 1px solid rgba(248, 113, 113, 0.75);
+      box-shadow:
+        0 0 18px rgba(248, 113, 113, 0.45);
+    }
+
+    /* PROMPT BAR */
+
+    .prompt-bar {
+      border-top: 1px solid var(--border-subtle);
+      padding: 10px 10px 12px 10px;
+      background: #020617;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .prompt-row {
+      display: flex;
+      gap: 8px;
+    }
+
+    #question-input {
+      flex: 1;
+      resize: none;
+      min-height: 44px;
+      max-height: 100px;
+      padding: 8px 10px;
+      border-radius: 10px;
+      border: 1px solid var(--border-subtle);
+      background: #020617;
+      color: var(--text-main);
+      font-size: 13px;
+      line-height: 1.4;
+      outline: none;
+    }
+
+    #question-input::placeholder {
+      color: var(--text-muted);
+    }
+
+    #send-btn {
+      width: 96px;
+      border-radius: 10px;
+      border: none;
+      font-size: 13px;
+      font-weight: 500;
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: white;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      box-shadow:
+        0 0 0 1px rgba(37, 99, 235, 0.45),
+        0 10px 22px rgba(15, 23, 42, 0.9);
+      transition: transform 0.08s ease, box-shadow 0.08s ease,
+        background 0.08s ease, opacity 0.08s ease;
+    }
+
+    #send-btn:hover:not(:disabled) {
+      transform: translateY(-1px);
+      box-shadow:
+        0 0 0 1px rgba(37, 99, 235, 0.65),
+        0 14px 30px rgba(15, 23, 42, 0.95);
+    }
+
+    #send-btn:disabled {
+      opacity: 0.55;
+      cursor: default;
+      transform: none;
+      box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.25);
+    }
+
+    body.mean-mode #send-btn {
+      background: linear-gradient(135deg, #b91c1c, #7f1d1d);
+      box-shadow:
+        0 0 0 1px rgba(248, 113, 113, 0.45),
+        0 10px 22px rgba(15, 23, 42, 0.9);
+    }
+
+    body.mean-mode #send-btn:disabled {
+      box-shadow:
+        0 0 0 1px rgba(248, 113, 113, 0.25);
+    }
+
+    .send-icon {
+      width: 13px;
+      height: 13px;
+      border-radius: 999px;
+      border: 1px solid rgba(191, 219, 254, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 9px;
+    }
+
+    .helper-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      color: var(--text-muted);
+      padding: 0 2px;
+    }
+
+    .helper-row code {
+      font-size: 11px;
+      background: #020617;
+      padding: 2px 5px;
+      border-radius: 4px;
+      border: 1px solid var(--border-subtle);
+      color: #e5e7eb;
+    }
+
+    body.mean-mode .helper-row code {
+      border-color: #450a0a;
+    }
+
+    .examples {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 2px;
+    }
+
+    .chip {
+      padding: 4px 9px;
+      border-radius: 999px;
+      border: 1px solid var(--border-subtle);
+      background: #020617;
+      font-size: 11px;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: border 0.08s ease, background 0.08s ease, color 0.08s ease,
+        box-shadow 0.08s ease;
+    }
+
+    .chip:hover {
+      border-color: rgba(59, 130, 246, 0.8);
+      background: #020617;
+      color: #e5e7eb;
+      box-shadow: 0 0 12px rgba(37, 99, 235, 0.4);
+    }
+
+    body.mean-mode .chip:hover {
+      border-color: rgba(248, 113, 113, 0.8);
+      box-shadow: 0 0 12px rgba(248, 113, 113, 0.4);
+    }
+
+    @media (max-width: 700px) {
+      .shell {
+        margin: 0;
+        border-radius: 0;
+      }
+      .header {
+        flex-direction: column;
+        gap: 8px;
+      }
+      .header-right {
+        text-align: left;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="header">
+      <div class="title">
+        <div class="title-row">
+          <span>CS110 Virtual Instructor</span>
+          <span class="title-badge">Beta</span>
+        </div>
+        <p class="subtitle">
+          Ask questions about the CS110 syllabus, lesson content, graded reviews,
+          or core Python concepts. The assistant answers using your course docs.
+        </p>
+      </div>
+
+      <div class="header-right">
+        <span>Model: Course-aware AI</span>
+        <span class="badge-pill">
+          <span class="badge-dot"></span>
+          Online · Local RAG
+        </span>
+        <button id="mode-toggle" class="mode-toggle" type="button">
+          <span class="emoji"></span>
+          <span class="label">Nice</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="main">
+      <div id="chat-window" class="chat-window">
+        <div class="message assistant">
+          <div class="bubble">
+Hello, I'm your CS110 virtual instructor  
+Ask me about lessons, GR dates, topics, or Python concepts and I’ll answer from the course materials.
+          </div>
+        </div>
+      </div>
+
+      <div class="prompt-bar">
+        <div class="prompt-row">
+          <textarea
+            id="question-input"
+            placeholder="Ask a question about CS110…"
+          ></textarea>
+          <button id="send-btn">
+            <span class="send-icon">↩</span>
+            <span>Ask</span>
+          </button>
+        </div>
+
+        <div class="helper-row">
+          <span>Tip: Ask about lessons, GR dates, topics, or Python concepts.</span>
+          <span>Press <code>Enter</code> to send, <code>Shift+Enter</code> for a new line.</span>
+        </div>
+
+        <div class="examples">
+          <button class="chip">What is covered in Lesson 7?</button>
+          <button class="chip">When is Graded Review 1?</button>
+          <button class="chip">Which lessons introduce cybersecurity?</button>
+          <button class="chip">Explain for loops in Python.</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const questionInput = document.getElementById("question-input");
+    const sendBtn = document.getElementById("send-btn");
+    const chatWindow = document.getElementById("chat-window");
+    const chips = document.querySelectorAll(".chip");
+    const modeToggle = document.getElementById("mode-toggle");
+
+    let mode = "nice";
+
+    function appendMessage(role, text) {
+      const msg = document.createElement("div");
+      msg.className = "message " + role;
+
+      const bubble = document.createElement("div");
+      bubble.className = "bubble";
+      bubble.textContent = text;
+
+      msg.appendChild(bubble);
+      chatWindow.appendChild(msg);
+      chatWindow.scrollTop = chatWindow.scrollHeight;
+    }
+
+    function updateModeUI() {
+      if (mode === "nice") {
+        document.body.classList.remove("mean-mode");
+        if (modeToggle) {
+          const emojiSpan = modeToggle.querySelector(".emoji");
+          const labelSpan = modeToggle.querySelector(".label");
+          if (emojiSpan) emojiSpan.textContent = "";
+          if (labelSpan) labelSpan.textContent = "Nice";
+          modeToggle.setAttribute("aria-label", "Switch to mean instructor");
+        }
+      } else {
+        document.body.classList.add("mean-mode");
+        if (modeToggle) {
+          const emojiSpan = modeToggle.querySelector(".emoji");
+          const labelSpan = modeToggle.querySelector(".label");
+          if (emojiSpan) emojiSpan.textContent = "";
+          if (labelSpan) labelSpan.textContent = "Mean";
+          modeToggle.setAttribute("aria-label", "Switch to nice instructor");
+        }
+      }
+    }
+
+    if (modeToggle) {
+      modeToggle.addEventListener("click", () => {
+        mode = mode === "nice" ? "mean" : "nice";
+        updateModeUI();
+      });
+      updateModeUI();
+    }
+
+    async function sendQuestion() {
+      const question = questionInput.value.trim();
+      if (!question) return;
+
+      appendMessage("user", question);
+      questionInput.value = "";
+      questionInput.focus();
+
+      sendBtn.disabled = true;
+      sendBtn.innerHTML = '<span class="send-icon">…</span><span>Thinking</span>';
+
+      try {
+        const response = await fetch("/api/ask", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ question, mode }),
+        });
+
+        if (!response.ok) {
+          let detail = `HTTP ${response.status}`;
+          try {
+            const err = await response.json();
+            if (err.detail) detail = err.detail;
+          } catch (_) {}
+          appendMessage(
+            "assistant",
+            "Sorry, something went wrong contacting the CS110 instructor (" +
+              detail +
+              ")."
+          );
+        } else {
+          const data = await response.json();
+          appendMessage("assistant", data.answer || "[No answer returned]");
+        }
+      } catch (e) {
+        appendMessage(
+          "assistant",
+          "Network error talking to the CS110 instructor. " +
+            "Make sure the backend (uvicorn main:app --reload) is running."
+        );
+      } finally {
+        sendBtn.disabled = false;
+        sendBtn.innerHTML =
+          '<span class="send-icon">↩</span><span>Ask</span>';
+      }
+    }
+
+    sendBtn.addEventListener("click", sendQuestion);
+
+    questionInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" && !e.shiftKey) {
+        e.preventDefault();
+        sendQuestion();
+      }
+    });
+
+    chips.forEach((chip) => {
+      chip.addEventListener("click", () => {
+        questionInput.value = chip.textContent;
+        questionInput.focus();
+      });
+    });
+  </script>
+</body>
+</html>

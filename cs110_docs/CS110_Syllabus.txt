@@ -1,0 +1,606 @@
+CS110 – Fall 2025 Syllabus
+Lessons 1–40 (Fall Semester Only)
+
+NOTE: For each lesson, any assignments listed on the official CS110 schedule as
+being due for that lesson are due at the start of that class meeting on the
+corresponding M-section or T-section calendar date shown below.
+
+================================================================
+Lesson 1: Course Introduction, Syllabus, and Tools Setup
+
+Date (M-section): August 6, 2025 (M1)
+Date (T-section): August 7, 2025 (T1)
+
+Description:
+Overview of CS110 course goals, grading, policies, and expectations. Introduce problem-solving with computation, the development environment (Python, VSCode/IDLE), and how labs, programming packs, and the course project fit together.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 1 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: August 6, 2025 (M1)
+  - T-section due date: August 7, 2025 (T1)
+
+
+================================================================
+Lesson 2: What Is a Computer? Hardware and the Von Neumann Architecture
+
+Date (M-section): August 10, 2025 (M2)
+Date (T-section): August 11, 2025 (T2)
+
+Description:
+Define what a computer is and explore the major hardware components: CPU, memory, storage, motherboard, and I/O devices. Explain the Von Neumann architecture and how instructions and data flow through the system, including the motivation for memory hierarchies.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 2 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: August 10, 2025 (M2)
+  - T-section due date: August 11, 2025 (T2)
+
+
+================================================================
+Lesson 3: Number Systems and Binary Representation
+
+Date (M-section): August 12, 2025 (M3)
+Date (T-section): August 13, 2025 (T3)
+
+Description:
+Introduce binary as the fundamental representation of information in digital systems. Practice converting between decimal and binary, and calculate how many values can be represented with a given number of bits.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 3 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: August 12, 2025 (M3)
+  - T-section due date: August 13, 2025 (T3)
+
+
+================================================================
+Lesson 4: Representing Data: Text, Images, and Video
+
+Date (M-section): August 14, 2025 (M4)
+Date (T-section): August 17, 2025 (T4)
+
+Description:
+Discuss bits, bytes, and larger units (KB, MB, GB). Explain ASCII and Unicode character encodings, how bitmap images are stored using pixels and color depth, and how videos can be represented as sequences of images.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 4 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: August 14, 2025 (M4)
+  - T-section due date: August 17, 2025 (T4)
+
+
+================================================================
+Lesson 5: Python Basics I: Variables, Types, and Expressions
+
+Date (M-section): August 18, 2025 (M5)
+Date (T-section): August 19, 2025 (T5)
+
+Description:
+Begin Python programming. Declare variables, understand basic data types (int, float, str, bool), and write arithmetic expressions. Introduce the assignment operator and evaluation order (PEMDAS) in Python.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 5 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: August 18, 2025 (M5)
+  - T-section due date: August 19, 2025 (T5)
+
+
+================================================================
+Lesson 6: Python Basics II: Input and Formatted Output
+
+Date (M-section): August 20, 2025 (M6)
+Date (T-section): August 21, 2025 (T6)
+
+Description:
+Use input() to get data from the user and print() to display results. Combine text and variables in output, perform simple calculations based on user input, and reinforce the idea of a program as a sequence of steps.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 6 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: August 20, 2025 (M6)
+  - T-section due date: August 21, 2025 (T6)
+
+
+================================================================
+Lesson 7: Functions I: Defining and Calling Functions
+
+Date (M-section): August 24, 2025 (M7)
+Date (T-section): August 25, 2025 (T7)
+
+Description:
+Introduce functions as reusable chunks of code. Define functions with parameters, return values, and meaningful names. Practice calling functions and passing arguments to structure programs more clearly.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 7 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: August 24, 2025 (M7)
+  - T-section due date: August 25, 2025 (T7)
+
+
+================================================================
+Lesson 8: Functions II: Decomposition and Testing
+
+Date (M-section): August 26, 2025 (M8)
+Date (T-section): August 27, 2025 (T8)
+
+Description:
+Use functions to break larger problems into smaller subproblems. Discuss good function design (single responsibility, clear parameters) and practice tracing function execution and return values.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 8 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: August 26, 2025 (M8)
+  - T-section due date: August 27, 2025 (T8)
+
+
+================================================================
+Lesson 9: Decision Making I: Boolean Logic and if Statements
+
+Date (M-section): August 28, 2025 (M9)
+Date (T-section): September 1, 2025 (T9)
+
+Description:
+Introduce Boolean expressions and relational operators. Use if statements to make decisions in code and execute different branches based on conditions.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 9 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: August 28, 2025 (M9)
+  - T-section due date: September 1, 2025 (T9)
+
+
+================================================================
+Lesson 10: Decision Making II: Compound Conditions and Nested ifs
+
+Date (M-section): September 2, 2025 (M10)
+Date (T-section): September 3, 2025 (T10)
+
+Description:
+Explore logical operators (and, or, not) and build compound Boolean expressions. Write multi-way decisions using if/elif/else and nested conditionals to handle more complex rules.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 10 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: September 2, 2025 (M10)
+  - T-section due date: September 3, 2025 (T10)
+
+
+================================================================
+Lesson 11: Iteration I: while Loops and Input Validation
+
+Date (M-section): September 4, 2025 (M11)
+Date (T-section): September 7, 2025 (T11)
+
+Description:
+Introduce while loops as a way to repeat code while a condition is true. Use loop control variables and patterns like input validation loops that keep asking the user until a valid response is given.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 11 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: September 4, 2025 (M11)
+  - T-section due date: September 7, 2025 (T11)
+
+
+================================================================
+Lesson 12: Iteration II: for Loops and Counting Patterns
+
+Date (M-section): September 8, 2025 (M12)
+Date (T-section): September 9, 2025 (T12)
+
+Description:
+Discuss the for loop and the range() function. Use for loops for counting, accumulation, and simple aggregations. Compare for and while loops and when each is most appropriate.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 12 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: September 8, 2025 (M12)
+  - T-section due date: September 9, 2025 (T12)
+
+
+================================================================
+Lesson 13: Lists I: One-Dimensional Lists
+
+Date (M-section): September 10, 2025 (M13)
+Date (T-section): September 11, 2025 (T13)
+
+Description:
+Introduce Python lists as ordered collections of items. Create, index, and update list elements. Use len(), max(), min(), and sum(), and loop over lists to process multiple values.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 13 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: September 10, 2025 (M13)
+  - T-section due date: September 11, 2025 (T13)
+
+
+================================================================
+Lesson 14: Lists II: Two-Dimensional Lists and Tables
+
+Date (M-section): September 14, 2025 (M14)
+Date (T-section): September 15, 2025 (T14)
+
+Description:
+Extend the list concept to two-dimensional lists (lists of lists). Treat 2D lists as tables, access elements using row/column indices, and iterate through rows for processing.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 14 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: September 14, 2025 (M14)
+  - T-section due date: September 15, 2025 (T14)
+
+
+================================================================
+Lesson 15: PythonGraph I: Static Graphics
+
+Date (M-section): September 16, 2025 (M15)
+Date (T-section): September 17, 2025 (T15)
+
+Description:
+Introduce the pythonGraph library for simple graphics. Draw basic shapes, text, and images at specific coordinates. Reinforce coordinate systems and how graphics can be used to visualize data or create simple scenes.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 15 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: September 16, 2025 (M15)
+  - T-section due date: September 17, 2025 (T15)
+
+
+================================================================
+Lesson 16: File I/O: Reading and Writing Text Files
+
+Date (M-section): September 18, 2025 (M16)
+Date (T-section): September 21, 2025 (T16)
+
+Description:
+Learn how to open, read, and write text files in Python. Use read(), split() to process file contents line by line, and safely close files. Discuss common file I/O pitfalls and how to handle data from files.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 16 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: September 18, 2025 (M16)
+  - T-section due date: September 21, 2025 (T16)
+
+
+================================================================
+Lesson 17: PythonGraph II: Animation and Interaction
+
+Date (M-section): September 22, 2025 (M17)
+Date (T-section): September 23, 2025 (T17)
+
+Description:
+Build on pythonGraph to create simple animations and interactive programs. Use loops to update frames, respond to keyboard/mouse input, and manage basic game or simulation state.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 17 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: September 22, 2025 (M17)
+  - T-section due date: September 23, 2025 (T17)
+
+
+================================================================
+Lesson 18: Project Day I: Program Design and Planning
+
+Date (M-section): September 24, 2025 (M18)
+Date (T-section): September 25, 2025 (T18)
+
+Description:
+Focus on the course project. Identify requirements, design program structure using functions and data structures, and draft a plan for implementation and testing.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 18 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: September 24, 2025 (M18)
+  - T-section due date: September 25, 2025 (T18)
+
+
+================================================================
+Lesson 19: Programming Review and Practice
+
+Date (M-section): September 28, 2025 (M19)
+Date (T-section): September 29, 2025 (T19)
+
+Description:
+Review key programming concepts covered so far: variables, decisions, loops, functions, lists, and file I/O. Work through practice problems in preparation for the first graded review.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 19 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: September 28, 2025 (M19)
+  - T-section due date: September 29, 2025 (T19)
+
+
+================================================================
+Lesson 20: Graded Review 1 (GR1)
+
+Date (M-section): October 1, 2025 (M20)
+Date (T-section): October 2, 2025 (T20)
+
+Description:
+In-class graded review covering early course content (lessons 1–19). Emphasis on problem solving, reading and writing small Python programs, and demonstrating understanding of foundational concepts.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 20 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: October 1, 2025 (M20)
+  - T-section due date: October 2, 2025 (T20)
+
+
+================================================================
+Lesson 21: Advanced Data Structures: Tuples, Sets, and Dictionaries
+
+Date (M-section): October 3, 2025 (M21)
+Date (T-section): October 5, 2025 (T21)
+
+Description:
+Introduce Python tuples, sets, and dictionaries as advanced data structures. Explain when and why each is useful, and practice common operations such as membership tests and key-based lookup.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 21 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: October 3, 2025 (M21)
+  - T-section due date: October 5, 2025 (T21)
+
+
+================================================================
+Lesson 22: Algorithms I: Searching and Simple Strategy
+
+Date (M-section): October 6, 2025 (M22)
+Date (T-section): October 7, 2025 (T22)
+
+Description:
+Use lists and loops to implement basic algorithms such as linear search. Emphasize clear, step-by-step logic and how to reason about correctness and efficiency at an introductory level.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 22 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: October 6, 2025 (M22)
+  - T-section due date: October 7, 2025 (T22)
+
+
+================================================================
+Lesson 23: Algorithms II: Problem-Solving with Functions and Data
+
+Date (M-section): October 8, 2025 (M23)
+Date (T-section): October 13, 2025 (T23)
+
+Description:
+Combine functions, lists, and control structures to solve moderately sized problems. Focus on organizing code, testing, and debugging to produce reliable solutions.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 23 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: October 8, 2025 (M23)
+  - T-section due date: October 13, 2025 (T23)
+
+
+================================================================
+Lesson 24: Networking I: Clients, Servers, and Protocols
+
+Date (M-section): October 14, 2025 (M24)
+Date (T-section): October 15, 2025 (T24)
+
+Description:
+Define key networking concepts: clients, servers, and protocols. Explain how logical ports and IP addressing enable communication and routing over the internet.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 24 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: October 14, 2025 (M24)
+  - T-section due date: October 15, 2025 (T24)
+
+
+================================================================
+Lesson 25: Networking II: Routers, DNS, DHCP, and Wireless Security
+
+Date (M-section): October 16, 2025 (M25)
+Date (T-section): October 19, 2025 (T25)
+
+Description:
+Describe the roles of routers and switches, the Domain Name System (DNS), and Dynamic Host Configuration Protocol (DHCP). Introduce network address translation (NAT) and discuss basic wireless security technologies and challenges.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 25 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: October 16, 2025 (M25)
+  - T-section due date: October 19, 2025 (T25)
+
+
+================================================================
+Lesson 26: Networking III: The Web, HTTP, and Practical Scenarios
+
+Date (M-section): October 20, 2025 (M26)
+Date (T-section): October 21, 2025 (T26)
+
+Description:
+Connect networking concepts to the World Wide Web. Discuss HTTP at a high level, how browsers and servers interact, and examine practical scenarios that motivate cyber security concerns.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 26 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: October 20, 2025 (M26)
+  - T-section due date: October 21, 2025 (T26)
+
+
+================================================================
+Lesson 27: Artificial Intelligence I: History and Foundations
+
+Date (M-section): October 22, 2025 (M27)
+Date (T-section): October 23, 2025 (T27)
+
+Description:
+Survey the history and evolution of artificial intelligence. Describe categories of AI, the Turing test, and the distinction between weak and strong AI, along with representative applications.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 27 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: October 22, 2025 (M27)
+  - T-section due date: October 23, 2025 (T27)
+
+
+================================================================
+Lesson 28: Artificial Intelligence II: Sense–Think–Act and Search
+
+Date (M-section): October 26, 2025 (M28)
+Date (T-section): October 27, 2025 (T28)
+
+Description:
+Introduce the Sense–Think–Act cycle, decision trees, finite state machines, and search trees. Explain the concept of game state and heuristics, and compare depth-first and breadth-first search at a conceptual level.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 28 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: October 26, 2025 (M28)
+  - T-section due date: October 27, 2025 (T28)
+
+
+================================================================
+Lesson 29: Artificial Intelligence III: Rule-Based AIs and Games
+
+Date (M-section): October 28, 2025 (M29)
+Date (T-section): October 29, 2025 (T29)
+
+Description:
+Develop simple rule-based AIs for discrete games. Use state information and rules to select actions, reinforcing how search and heuristics guide AI decision-making.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 29 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: October 28, 2025 (M29)
+  - T-section due date: October 29, 2025 (T29)
+
+
+================================================================
+Lesson 30: Machine Learning I: Models, Features, and Training
+
+Date (M-section): October 30, 2025 (M30)
+Date (T-section): November 2, 2025 (T30)
+
+Description:
+Introduce the goals of machine learning and common terminology: model, instance, feature. Differentiate supervised and unsupervised learning and walk through the steps of training a simple model and evaluating it using a confusion matrix.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 30 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: October 30, 2025 (M30)
+  - T-section due date: November 2, 2025 (T30)
+
+
+================================================================
+Lesson 31: Machine Learning II: Limitations and Ethics
+
+Date (M-section): November 3, 2025 (M31)
+Date (T-section): November 4, 2025 (T31)
+
+Description:
+Discuss limitations of current AI/ML systems and ethical considerations, especially in high-risk or life-critical settings. Introduce the concept of explainable AI and compare priorities of academia, industry, and the Department of Defense.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 31 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: November 3, 2025 (M31)
+  - T-section due date: November 4, 2025 (T31)
+
+
+================================================================
+Lesson 32: Cybersecurity I: Information Security Fundamentals
+
+Date (M-section): November 5, 2025 (M32)
+Date (T-section): November 6, 2025 (T32)
+
+Description:
+Define information security, risk, threats, and vulnerabilities. Explain the CIA triad (confidentiality, integrity, availability) and how checksums, hashes, and encryption support secure communication.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 32 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: November 5, 2025 (M32)
+  - T-section due date: November 6, 2025 (T32)
+
+
+================================================================
+Lesson 33: Cybersecurity II: Cyber Crime and the Attack Lifecycle
+
+Date (M-section): November 9, 2025 (M33)
+Date (T-section): November 12, 2025 (T33)
+
+Description:
+Examine recent cybercrime trends and walk through the cyber-attack methodology. Discuss reconnaissance, scanning, gaining and maintaining access, and covering tracks, including password attack techniques and strong password practices.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 33 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: November 9, 2025 (M33)
+  - T-section due date: November 12, 2025 (T33)
+
+
+================================================================
+Lesson 34: Cybersecurity III: Malware, Vulnerabilities, and IoT
+
+Date (M-section): November 13, 2025 (M34)
+Date (T-section): November 14, 2025 (T34)
+
+Description:
+Survey types of malware and how they fit into attacks. Summarize common software and system vulnerabilities, the security implications of the Internet of Things (IoT), and risks to industrial control systems (ICS).
+
+Assignments Due:
+- Any assignments marked as due for Lesson 34 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: November 13, 2025 (M34)
+  - T-section due date: November 14, 2025 (T34)
+
+
+================================================================
+Lesson 35: Cybersecurity IV: Offensive Cyber Operations and Case Studies
+
+Date (M-section): November 16, 2025 (M35)
+Date (T-section): November 17, 2025 (T35)
+
+Description:
+Explore case studies where offensive cyber operations achieve effects in support of broader missions. Discuss benefits and risks, tying together earlier topics on vulnerabilities and critical infrastructure.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 35 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: November 16, 2025 (M35)
+  - T-section due date: November 17, 2025 (T35)
+
+
+================================================================
+Lesson 36: Cybersecurity V: Defense in Depth and Security Principles
+
+Date (M-section): November 18, 2025 (M36)
+Date (T-section): November 19, 2025 (T36)
+
+Description:
+Introduce key defensive concepts: asymmetry of defense, no perfect security, and defense in depth. Define basic network defenses such as firewalls, proxy servers, intrusion detection and prevention systems, and access controls.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 36 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: November 18, 2025 (M36)
+  - T-section due date: November 19, 2025 (T36)
+
+
+================================================================
+Lesson 37: Cybersecurity VI: Practical Defenses and Personal Security
+
+Date (M-section): November 20, 2025 (M37)
+Date (T-section): November 23, 2025 (T37)
+
+Description:
+Compare firewall whitelisting and blacklisting, describe how proxies cache and filter traffic, and distinguish signature-based from anomaly-based intrusion detection. Emphasize personal practices to thwart social engineering and protect personal information.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 37 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: November 20, 2025 (M37)
+  - T-section due date: November 23, 2025 (T37)
+
+
+================================================================
+Lesson 38: Project Day II: Integration and Presentations
+
+Date (M-section): November 24, 2025 (M38)
+Date (T-section): December 1, 2025 (T38)
+
+Description:
+Use class time to integrate project components, refine code, and prepare final demonstrations. Emphasize testing, documentation, and clear presentation of results.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 38 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: November 24, 2025 (M38)
+  - T-section due date: December 1, 2025 (T38)
+
+
+================================================================
+Lesson 39: Course Review and Final Exam Preparation
+
+Date (M-section): December 2, 2025 (M39)
+Date (T-section): December 3, 2025 (T39)
+
+Description:
+Comprehensive review of course topics from computing fundamentals through programming, networking, AI, and cyber security. Focus on big-picture connections and problem-solving strategies to prepare for final exams.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 39 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: December 2, 2025 (M39)
+  - T-section due date: December 3, 2025 (T39)
+
+
+================================================================
+Lesson 40: Course Wrap-Up and Reflection
+
+Date (M-section): December 4, 2025 (M40)
+Date (T-section): December 5, 2025 (T40)
+
+Description:
+Reflect on key takeaways from CS110, how computing concepts apply to cadet life and future Air Force roles, and how to continue learning programming and cyber topics beyond the course.
+
+Assignments Due:
+- Any assignments marked as due for Lesson 40 on the official CS110 assignment schedule are due at the start of this lesson:
+  - M-section due date: December 4, 2025 (M40)
+  - T-section due date: December 5, 2025 (T40)
+
